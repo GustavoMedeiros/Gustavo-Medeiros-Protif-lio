@@ -2,14 +2,13 @@
 
 ```{=html}
 <p align="center">
-```
-`<img src="https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=nextdotjs"/>`{=html}
-`<img src="https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react"/>`{=html}
-`<img src="https://img.shields.io/badge/TypeScript-blue?style=for-the-badge&logo=typescript"/>`{=html}
-`<img src="https://img.shields.io/badge/CSS%20Modules-000?style=for-the-badge&logo=css3"/>`{=html}
-`<img src="https://img.shields.io/badge/Status-Online-success?style=for-the-badge"/>`{=html}
 
-```{=html}
+<img src="https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=nextdotjs"/>
+<img src="https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react"/>
+<img src="https://img.shields.io/badge/TypeScript-blue?style=for-the-badge&logo=typescript"/>
+<img src="https://img.shields.io/badge/CSS%20Modules-000?style=for-the-badge&logo=css3"/>
+<img src="https://img.shields.io/badge/Status-Online-success?style=for-the-badge"/>
+
 </p>
 ```
 
