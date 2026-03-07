@@ -1,0 +1,48 @@
+:root {
+    --bg-primary: #0B0B0F;
+    --bg-surface: #111117;
+    --bg-card: #16161D;
+
+    --text-primary: #FFFFFF;
+    --text-secondary: #A1A1AA;
+
+    --accent-orange: #FF6B00;
+    --accent-purple: #7C3AED;
+
+    --gradient-main: linear-gradient(90deg, #FF6B00, #7C3AED);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-primary);
+    background-image:
+    linear-gradient(
+      rgba(0,0,0,0.65),
+      rgba(0,0,0,0.75)
+    ), url("../assets/images/Background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+}
+
+@keyframes lineGrow {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animate-lineGrow {
+  animation: lineGrow 1.5s ease forwards;
+}

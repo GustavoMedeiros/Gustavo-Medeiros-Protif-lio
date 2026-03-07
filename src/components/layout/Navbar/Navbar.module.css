@@ -1,0 +1,243 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  transition: all 0.3s ease;
+}
+
+.scrolled {
+  background: rgba(11, 11, 15, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #27272a;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+}
+
+.logoIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #f97316, #8b5cf6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover .logoIcon {
+  transform: scale(1.05);
+}
+
+.logoText {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.logoText span {
+  color: #f97316;
+}
+
+/* Desktop Links */
+
+.links {
+  display: flex;
+  gap: 2rem;
+}
+
+.links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.links a:hover {
+  color: white;
+}
+
+/* CTA */
+
+.ctaWrapper {
+  display: block;
+}
+
+.ctaButton {
+  background: #f97316;
+  border: none;
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.ctaButton:hover {
+  background: #ea580c;
+  box-shadow: 0 0 20px rgba(249, 115, 22, 0.3);
+}
+
+/* Mobile Toggle */
+
+.mobileToggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile Menu */
+
+.mobileMenu {
+  margin-top: 1rem;
+  padding: 1.2rem;
+  border-top: 1px solid #27272a;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  background: rgba(11, 11, 15, 0.95);
+  backdrop-filter: blur(12px);
+
+  border-radius: 12px;
+
+  animation: fadeIn 0.2s ease forwards;
+}
+
+.mobileMenu a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.mobileMenu a:hover {
+  color: white;
+}
+
+.mobileCta {
+  margin-top: 0.5rem;
+  padding: 0.8rem;
+  background: #f97316;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* ------------------- */
+/* TABLET */
+/* ------------------- */
+
+@media (max-width: 1024px) {
+
+  .container {
+    padding: 0.9rem 1.3rem;
+  }
+
+  .links {
+    gap: 1.4rem;
+  }
+
+  .logoIcon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .logoText {
+    font-size: 1.1rem;
+  }
+
+}
+
+/* ------------------- */
+/* MOBILE */
+/* ------------------- */
+
+@media (max-width: 768px) {
+
+  .links {
+    display: none;
+  }
+
+  .ctaWrapper {
+    display: none;
+  }
+
+  .mobileToggle {
+    display: block;
+  }
+
+  .container {
+    padding: 0.8rem 1.2rem;
+  }
+
+}
+
+/* ------------------- */
+/* SMALL MOBILE */
+/* ------------------- */
+
+@media (max-width: 480px) {
+
+  .logoIcon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .logoText {
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 0.7rem 1rem;
+  }
+
+  .mobileMenu {
+    padding: 1rem;
+  }
+
+}
+
+/* Animation */
+
+@keyframes fadeIn {
+
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}

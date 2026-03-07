@@ -1,0 +1,98 @@
+/* Base Button */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Variants */
+.btn-default {
+  background-color: #f97316;
+  color: #ffffff;
+}
+
+.btn-default:hover {
+  background-color: #ea580c;
+  box-shadow: 0 0 25px rgba(249, 115, 22, 0.4);
+}
+
+.btn-destructive {
+  background-color: #dc2626;
+  color: #ffffff;
+}
+
+.btn-destructive:hover {
+  background-color: #b91c1c;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #8b5cf6;
+  color: #8b5cf6;
+}
+
+.btn-outline:hover {
+  background-color: rgba(139, 92, 246, 0.1);
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background-color: #1f2937;
+  color: #ffffff;
+}
+
+.btn-secondary:hover {
+  background-color: #111827;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: #ffffff;
+}
+
+.btn-ghost:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.btn-link {
+  background: none;
+  color: #8b5cf6;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+/* Sizes */
+.btn-defaultSize {
+  padding: 10px 16px;
+}
+
+.btn-sm {
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+.btn-lg {
+  padding: 15px 35px;
+  font-size: 1rem;
+}
+
+.btn-icon {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}

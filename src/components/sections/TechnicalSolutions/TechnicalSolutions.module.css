@@ -1,0 +1,232 @@
+/* ================= SECTION ================= */
+
+.section {
+  position: relative;
+  padding: 120px 24px;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* ================= BACKGROUND ================= */
+
+.background {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.blur {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  background: rgba(139, 92, 246, 0.05);
+  border-radius: 50%;
+  filter: blur(120px);
+}
+
+/* ================= HEADER ================= */
+
+.header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.badge {
+  color: #f97316;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  margin: 12px 0;
+  color: white;
+  line-height: 1.2;
+}
+
+.subtitle {
+  color: #a1a1aa;
+  font-size: 16px;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.gradientText {
+  background: linear-gradient(135deg, #f97316 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ================= GRID ================= */
+
+.grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* ================= CARD ================= */
+
+.card {
+  padding: 28px;
+  border-radius: 20px;
+  background: rgba(26, 26, 36, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow Effect */
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 0 0 1px rgba(139, 92, 246, 0.1),
+    0 10px 30px rgba(139, 92, 246, 0.1),
+    0 0 60px rgba(139, 92, 246, 0.1);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  background: radial-gradient(
+    600px circle at var(--mouse-x) var(--mouse-y),
+    rgba(139, 92, 246, 0.08),
+    transparent 40%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.iconWrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: linear-gradient(
+    135deg,
+    rgba(249, 115, 22, 0.2),
+    rgba(139, 92, 246, 0.2)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: #f97316;
+  transition: all 0.3s ease;
+}
+
+.card:hover .iconWrapper {
+  background: linear-gradient(
+    135deg,
+    rgba(249, 115, 22, 0.3),
+    rgba(139, 92, 246, 0.3)
+  );
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.2);
+}
+
+.cardTitle {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.cardDescription {
+  font-size: 14px;
+  color: #a1a1aa;
+  line-height: 1.6;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1024px) {
+
+  .section {
+    padding: 100px 32px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+
+  .card {
+    padding: 26px;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+  .section {
+    padding: 80px 20px;
+  }
+
+  .header {
+    margin-bottom: 60px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    padding: 24px;
+  }
+
+  .iconWrapper {
+    width: 44px;
+    height: 44px;
+  }
+
+  .blur {
+    width: 250px;
+    height: 250px;
+    filter: blur(90px);
+  }
+}
