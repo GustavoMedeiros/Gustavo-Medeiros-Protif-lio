@@ -1,73 +1,163 @@
-# React + TypeScript + Vite
+# 🚀 Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+```{=html}
+<p align="center">
+```
+`<img src="https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=nextdotjs"/>`{=html}
+`<img src="https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react"/>`{=html}
+`<img src="https://img.shields.io/badge/TypeScript-blue?style=for-the-badge&logo=typescript"/>`{=html}
+`<img src="https://img.shields.io/badge/CSS%20Modules-000?style=for-the-badge&logo=css3"/>`{=html}
+`<img src="https://img.shields.io/badge/Status-Online-success?style=for-the-badge"/>`{=html}
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```{=html}
+</p>
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+------------------------------------------------------------------------
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🌐 Live Preview
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+🔗 **Live website**
+
+https://yourdomain.com
+
+------------------------------------------------------------------------
+
+## ✨ About the Project
+
+This project is a modern developer portfolio built to showcase projects,
+experience, and skills with a clean UI and smooth animations.
+
+The goal was to create a high-performance portfolio with a professional
+design inspired by modern SaaS websites.
+
+### Features
+
+-   ⚡ Fast and optimized
+-   📱 Fully responsive
+-   🎨 Modern UI
+-   🧩 Modular architecture
+-   ✨ Smooth animations
+-   📬 Contact form
+
+------------------------------------------------------------------------
+
+## 🖥️ Preview
+
+```{=html}
+<p align="center">
 ```
+`<img src="https://media.giphy.com/media/coxQHKASG60HrHtvkt/giphy.gif" width="800"/>`{=html}
+```{=html}
+</p>
+```
+
+------------------------------------------------------------------------
+
+# 🧠 Tech Stack
+
+### Frontend
+
+-   Next.js
+-   React
+-   TypeScript
+-   CSS Modules
+
+### UI
+
+-   Responsive Layout
+-   Custom Animations
+-   Modern Design System
+
+### Tools
+
+-   Git
+-   GitHub
+-   Vercel / Hostinger
+
+------------------------------------------------------------------------
+
+# 📂 Project Structure
+
+    portfolio
+     ┣ app
+     ┣ components
+     ┣ styles
+     ┣ public
+     ┣ package.json
+     ┗ next.config.js
+
+------------------------------------------------------------------------
+
+# ⚙️ Installation
+
+Clone the project:
+
+    git clone https://github.com/yourusername/portfolio.git
+
+Enter the folder:
+
+    cd portfolio
+
+Install dependencies:
+
+    npm install
+
+Run the project:
+
+    npm run dev
+
+The app will run at:
+
+    http://localhost:3000
+
+------------------------------------------------------------------------
+
+# 🚀 Build for Production
+
+    npm run build
+
+Export static version:
+
+    npm run export
+
+------------------------------------------------------------------------
+
+# 📱 Responsive Design
+
+The website was designed to work across all devices:
+
+-   Desktop
+-   Tablet
+-   Mobile
+
+Breakpoints used:
+
+    Desktop  > 1024px
+    Tablet   768px - 1024px
+    Mobile   < 768px
+
+------------------------------------------------------------------------
+
+# 📬 Contact
+
+If you'd like to connect:
+
+-   GitHub
+-   LinkedIn
+-   Email
+
+------------------------------------------------------------------------
+
+# ⭐ Support
+
+If you like this project:
+
+⭐ Star the repository\
+🍴 Fork the project
+
+------------------------------------------------------------------------
+
+# 📄 License
+
+This project is open-source and available under the MIT License.
