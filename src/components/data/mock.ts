@@ -184,7 +184,7 @@ export const projects: Project[] = [
     
     impact:
       "Melhoria significativa no tempo de desenvolvimento do frontend e integração com sistemas internos e externos, além de permitir auditoria e escalabilidade futura."
-  }
+  },
 
   {
   id: 4,
