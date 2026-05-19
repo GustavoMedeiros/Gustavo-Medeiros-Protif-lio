@@ -2,6 +2,7 @@ import type { Project } from "../sections/Projects/Projects";
 
 import VeloraManagerImage from "../../assets/images/Portifólio - Rokuzen.jpeg";
 import SeguramaisImage from "../../assets/images/Portifólio - SeguraMais.jpg";
+import JanainaImage from "../../aasets/images/janaina-advogada.png"
 
 export const developerInfo = {
   name: "Ricardo Souza",
