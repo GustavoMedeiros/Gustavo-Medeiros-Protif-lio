@@ -185,6 +185,53 @@ export const projects: Project[] = [
     impact:
       "Melhoria significativa no tempo de desenvolvimento do frontend e integração com sistemas internos e externos, além de permitir auditoria e escalabilidade futura."
   }
+
+  {
+  id: 4,
+
+  title: "Janaina Medeiros Advocacia",
+
+  description:
+    "Website institucional desenvolvido para escritório de advocacia, com foco em credibilidade, apresentação profissional e presença digital moderna.",
+
+  image: "/images/janaina-advocacia.png",
+
+  stack: [
+    "React",
+    "TypeScript",
+    "Vite",
+    "CSS Modules",
+    "Responsive Design",
+    "Vercel"
+  ],
+
+  link: "https://janainamedeirosadvocacia.com.br",
+
+  context:
+    "Projeto desenvolvido para modernizar a presença digital do escritório Janaina Medeiros Advocacia, transmitindo profissionalismo, autoridade e confiança aos visitantes.",
+
+  problem:
+    "O escritório precisava de uma plataforma moderna para apresentar serviços jurídicos de forma clara, acessível e profissional, fortalecendo sua presença online.",
+
+  goals:
+    "Criar um website institucional moderno, responsivo e otimizado para proporcionar uma boa experiência ao usuário e fortalecer a identidade visual do escritório.",
+
+  architecture:
+    "Aplicação frontend desenvolvida com React e TypeScript utilizando arquitetura baseada em componentes reutilizáveis e estilização modular com CSS Modules.",
+
+  technicalDetails:
+    "Implementação de layout responsivo, animações suaves de interface, organização modular de componentes, otimização de performance e deploy em ambiente cloud.",
+
+  challenges:
+    "Garantir equilíbrio entre sofisticação visual, performance e acessibilidade, além de adaptar o design para diferentes dispositivos mantendo consistência visual.",
+
+  result:
+    "Entrega de uma plataforma profissional, moderna e responsiva, fortalecendo a identidade digital do escritório e melhorando sua apresentação online.",
+
+  impact:
+    "O projeto proporcionou maior credibilidade digital ao escritório e uma experiência mais moderna e intuitiva para os visitantes."
+}
+
 ];
 
 export const developmentProcess = [
